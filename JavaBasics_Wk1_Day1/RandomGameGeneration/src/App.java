@@ -30,6 +30,7 @@ public class App {
             if (rand - 10 <= theirGuess && theirGuess <= rand + 10){
                 System.out.println("");
                 System.out.println("You are in the range with your guess of: " + theirGuess);
+                guessCorrectly = true;
                 break;
             }
             numberOfGuesses += 1;
