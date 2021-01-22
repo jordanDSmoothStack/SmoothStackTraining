@@ -1,14 +1,9 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Take multiple values from the command line and show the result of adding all of them
 
-## Folder Structure
+Construct a 2D array and find the max number and show it’s position in an array
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Create the following hierarchy 
+Shape is an interface
+Rectangle, Circle and Triangle are classes
