@@ -1,5 +1,13 @@
 package com.ss.basicsday2.multiple;
 
+/*
+*
+* Created by Jordan Divina
+* The following file takes command line arguements then sums them all together
+* If an input given is not a number, then it does not add anything to that ongoning sum
+*
+*/
+
 public class MultipleValues {
     public static void main(String[] args) {
         Integer commandSum = 0;
