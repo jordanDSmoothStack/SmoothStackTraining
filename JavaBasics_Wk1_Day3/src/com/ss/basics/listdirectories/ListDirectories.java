@@ -20,9 +20,18 @@ public class ListDirectories {
     public static void main(String[] args) {
         final File mainDirectory = new File("/Users/jordandivina/Documents/GitHub/SmoothStackAccountTraining/SmoothStackTraining/JavaBasics_Wk1_Day3/resources");
         ListDirectories ld = new ListDirectories();
-        System.out.println("");
-        System.out.println("Checking the files and subdirectories in " + mainDirectory.getName());
-        ld.recursiveList(mainDirectory, 0);
+        if (mainDirectory.isDirectory()){
+            System.out.println("");
+            System.out.println("Checking the files and subdirectories in " + mainDirectory.getName() + ": ");
+            System.out.println("");
+            ld.recursiveList(mainDirectory, 0);
+            System.out.println("");
+        }
+        else{
+            System.out.println("");
+            System.out.println("The current path is not a directory...");
+            System.out.println("");
+        }
     }
     
     /*
@@ -36,7 +45,8 @@ public class ListDirectories {
     public void recursiveList(final File folder, int space){
         for (File tempVal: folder.listFiles()){
             if (tempVal.isDirectory()){
-                System.out.println("The following is the name of this subdirectory: " + tempVal.getName());
+                System.out.println("");
+                System.out.println("The following is the name of this subdirectory '" + tempVal.getName() + "' in this directory: " + folder.getName());
                 if (tempVal.listFiles().length == 0){
                     System.out.println(" ".repeat(space * 4) + tempVal.getName() + " does not contain any files...");
                 }
