@@ -8,8 +8,17 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* File for adding DateTime assignments for week 5
+*
+*/
+
 public class DateTime {
 
+    
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
       if (args.length == 0 || args.length != 3){
             System.out.println("");
@@ -29,6 +38,10 @@ public class DateTime {
       }  
     }
 
+    
+    /** 
+     * @param date
+     */
     public static void OccursOnFriday13th(String date){
         LocalDate theDate = LocalDate.parse(date);
         try{
@@ -48,6 +61,10 @@ public class DateTime {
 
     }
 
+    
+    /** 
+     * @param year
+     */
     public static void reportLengthOfMonth(String year){
         int monthCounter = 1;
         while (monthCounter < 13){
@@ -68,6 +85,10 @@ public class DateTime {
         }
     }
 
+    
+    /** 
+     * @param month
+     */
     public static void mondayList(String month){
         LocalDateTime currentTime = LocalDateTime.now();
         int currentYear = currentTime.getYear();
