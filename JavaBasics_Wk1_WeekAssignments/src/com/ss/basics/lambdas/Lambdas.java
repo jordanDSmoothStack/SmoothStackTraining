@@ -62,4 +62,22 @@ public class Lambdas {
             }
         };
     }
+
+    public static void main(String[] args) {
+        Integer[][] testCases = {{1,4}, {2,5}, {3,898},{1,3},{2,12}};
+        System.out.println();
+        for (int i = 0; i < testCases.length; i++){
+            Integer[] currTestCase = testCases[i];
+            if (currTestCase[0] == 1){
+                System.out.println(Lambdas.isOdd().unary(currTestCase[1]));
+            }
+            if (currTestCase[0] == 2){
+                System.out.println(Lambdas.isPrime().unary(currTestCase[1]));
+            }
+            if (currTestCase[0] == 3){
+                System.out.println(Lambdas.isPalindrome().unary(currTestCase[1]));
+            }
+        }
+        System.out.println();
+    }
 }
