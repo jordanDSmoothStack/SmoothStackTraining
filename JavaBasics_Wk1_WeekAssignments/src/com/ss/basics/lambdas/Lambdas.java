@@ -32,7 +32,7 @@ public class Lambdas {
      */
     static PerformOperation isPrime(){
         return (a) -> {
-            if (a == 0 || a == 1){
+            if (a == 0 || a == 1 || a < 0){
                 return "NEITHER";
             }
             int currentCounter = 2;
@@ -54,7 +54,7 @@ public class Lambdas {
         return (a) -> {
             StringBuilder tempVal = new StringBuilder(Integer.toString(a));
             StringBuilder reverseVal = new StringBuilder(tempVal).reverse();
-            if (tempVal == reverseVal){
+            if (tempVal.toString().equals(reverseVal.toString())){
                 return "PALINDROME";
             }
             else{
