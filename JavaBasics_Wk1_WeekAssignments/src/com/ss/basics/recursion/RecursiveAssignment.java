@@ -137,7 +137,7 @@ public class RecursiveAssignment{
      */
     public static void main(String[] args) {
         Integer sampleTarget = 14;
-        Integer[] sampleArr = {2,2,5,5,1};
+        Integer[] sampleArr = {2,2,5,5,1,2,1,2};
 
         boolean isPossible = recursiveHelper(sampleArr, sampleTarget);
         System.out.println();
