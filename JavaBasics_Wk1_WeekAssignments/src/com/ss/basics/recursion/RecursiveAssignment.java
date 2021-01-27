@@ -132,13 +132,12 @@ public class RecursiveAssignment{
         return recursiveGroupSum(list, target);
     }
 
-    
     /** 
      * @param args
      */
     public static void main(String[] args) {
-        Integer sampleTarget = 4;
-        Integer[] sampleArr = {2,2,5,5};
+        Integer sampleTarget = 14;
+        Integer[] sampleArr = {2,2,5,5,1};
 
         boolean isPossible = recursiveHelper(sampleArr, sampleTarget);
         System.out.println();
