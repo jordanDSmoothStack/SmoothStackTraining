@@ -17,7 +17,7 @@ public class Lambdas {
      /** 
       * @return PerformOperation
       */
-    PerformOperation isOdd(){
+    static PerformOperation isOdd(){
         return (a) -> {
             if (a % 2 == 0){
                 return "EVEN";
@@ -30,7 +30,7 @@ public class Lambdas {
     /** 
      * @return PerformOperation
      */
-    PerformOperation isPrime(){
+    static PerformOperation isPrime(){
         return (a) -> {
             if (a == 0 || a == 1){
                 return "NEITHER";
@@ -50,7 +50,7 @@ public class Lambdas {
     /** 
      * @return PerformOperation
      */
-    PerformOperation isPalindrome(){
+    static PerformOperation isPalindrome(){
         return (a) -> {
             StringBuilder tempVal = new StringBuilder(Integer.toString(a));
             StringBuilder reverseVal = new StringBuilder(tempVal).reverse();
