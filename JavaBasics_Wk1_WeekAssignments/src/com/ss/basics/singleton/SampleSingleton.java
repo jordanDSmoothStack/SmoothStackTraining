@@ -2,7 +2,7 @@ package com.ss.basics.singleton;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
-//import java.sql.DriverManager;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -39,9 +39,9 @@ public class SampleSingleton {
 		try{
 			Statement st = conn.createStatement();
 			ResultSet rs = st.executeQuery("select id from table");
-			//int x = 0;
+			int x = 0;
 			while(rs.next()) {
-				//x = rs.getInt(1) * input.intValue();
+				x = rs.getInt(1) * input.intValue();
 			}
 		}
 		catch (SQLException e){
